@@ -5,7 +5,7 @@ pipeline {
         }
     }
     environment {
-        CLOUDSDK_CORE_PROJECT='canvas-landing-397000'
+        CLOUDSDK_CORE_PROJECT='sonic-aria-398402'
         GCLOUD_CREDS=credentials('gcloud-creds')
     }
     stages {
