@@ -6,14 +6,14 @@ pipeline {
     }
     environment {
         CLOUDSDK_CORE_PROJECT='canvas-landing-397000'
-        GCLOUD_CREDS=credentials('gcloud-creds2')
+        GCLOUD_CREDS=credentials('gcloud-creds')
     }
     stages {
         stage('gcloud login'){
             steps {
                 sh '''
                     gcloud version
-                    gcloud config set project canvas-landing-397000
+                    gcloud config set project sonic-aria-398402
                     gcloud auth activate-service-account --key-file="$GCLOUD_CREDS"
                     '''
             }
